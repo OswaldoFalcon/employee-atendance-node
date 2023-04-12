@@ -11,7 +11,7 @@ require("dotenv").config();
 //settings
 app.set("port", process.env.PORT || 3000);
 // const { PORT, mongoUri } = require("./config");
-// app.use(cors()); // to allow cross origin requests
+app.use(cors()); // to allow cross origin requests
 // app.use(bodyParser.json()); // to convert the request into JSON
 
 mongoose
