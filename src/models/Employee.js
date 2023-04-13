@@ -4,9 +4,9 @@ const {Schema} = mongoose;
 const Employee = new Schema({
   userID: Number,
   userName: String,
-  Date: Date,
-  punchIn: Date,
-  punchOut: Date,
+  date: String,
+  punchIn: String,
+  punchOut: String,
 });
 
 module.exports = mongoose.model("Employee", Employee)
